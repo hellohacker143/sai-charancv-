@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravikanti Sai Charan - AI/ML Strategist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .section {
+            margin-top: 25px;
+        }
+        .section h2 {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 7px;
+            color: #007bff;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+        .skill:hover {
+            background: #0056b3;
+        }
+        .toggle-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        @keyframes vanish {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0; display: none; }
+        }
+        .vanishing {
+            animation: vanish 1.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cv-container">
+        <div class="header">
+            <h1>Ravikanti Sai Charan</h1>
+            <p><strong>AI/ML Strategist</strong></p>
+        </div>
+        <div class="contact-info">
+            <p>Email: <strong>rk91771432@gmail.com</strong></p>
+            <p>Phone: <strong>+91 7660856536</strong></p>
+            <p>Location: <strong>Ramnagar, Secunderabad</strong></p>
+        </div>
+        <div class="section" id="content-section">
+            <h2>Profile Information</h2>
+            <p>A results-driven AI/ML strategist with a knack for leveraging data-driven insights to boost brand growth. Specialized in machine learning, NLP, deep learning, and AI-powered automation, I aim to transform businesses through intelligent technology solutions.</p>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">SQL</span>
+                <span class="skill">Web Programming</span>
+                <span class="skill">AI/ML</span>
+                <span class="skill">ChatGPT (Prompting)</span>
+                <span class="skill">English (Fluent)</span>
+                <span class="skill">Telugu (Fluent)</span>
+            </div>
+            <h2>Education</h2>
+            <p><strong>Swami Vivekananda Institute of Technology</strong> - B.Tech in AI/ML (2021–2024)</p>
+            <p><strong>SVS College</strong> - Diploma in EEE (2016–2019)</p>
+            <p><strong>SPR School</strong> - Higher Secondary Education (2016)</p>
+            <h2>Work Experience</h2>
+            <p><strong>Edodwaja (2023)</strong> - Full Stack Developer</p>
+            <p><strong>Tech Zone (2024)</strong> - AI/ML Engineer</p>
+            <h2>Projects</h2>
+            <p><strong>Hand Gesture Recognition Model</strong> - AI-powered system using computer vision to interpret hand gestures.</p>
+            <p><strong>Eye Vision Mode for Smart Applications</strong> - Eye-tracking technology for hands-free navigation.</p>
+            <p><strong>SEO Tool with AI</strong> - AI-driven web tool for content expansion and hashtag generation.</p>
+        </div>
+        <button class="toggle-btn" onclick="toggleSnapEffect()"> Snap  mode</button>
+        <script>
+            function toggleSnapEffect() {
+                var content = document.getElementById('content-section');
+                if (content.classList.contains('vanishing')) {
+                    content.classList.remove('vanishing');
+                    content.style.display = 'block';
+                } else {
+                    content.classList.add('vanishing');
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
