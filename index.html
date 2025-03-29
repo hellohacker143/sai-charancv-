@@ -86,6 +86,12 @@
         .vanishing {
             animation: vanish 1.5s forwards;
         }
+        .qr-code {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+        }
     </style>
 </head>
 <body>
@@ -99,6 +105,7 @@
             <p>Phone: <strong>+91 7660856536</strong></p>
             <p>Location: <strong>Ramnagar, Secunderabad</strong></p>
         </div>
+        <img src="https://github.com/hellohacker143/sai-charancv-/blob/main/sai_charan_cv_qr.png" alt="QR Code" class="qr-code">
         <div class="section" id="content-section">
             <h2>Profile Information</h2>
             <p>A results-driven AI/ML strategist with a knack for leveraging data-driven insights to boost brand growth. Specialized in machine learning, NLP, deep learning, and AI-powered automation, I aim to transform businesses through intelligent technology solutions.</p>
@@ -123,7 +130,7 @@
             <p><strong>Eye Vision Mode for Smart Applications</strong> - Eye-tracking technology for hands-free navigation.</p>
             <p><strong>SEO Tool with AI</strong> - AI-driven web tool for content expansion and hashtag generation.</p>
         </div>
-        <button class="toggle-btn" onclick="toggleSnapEffect()"> Snap  mode</button>
+        <button class="toggle-btn" onclick="toggleSnapEffect()"> Snap mode</button>
         <script>
             function toggleSnapEffect() {
                 var content = document.getElementById('content-section');
